@@ -1,0 +1,51 @@
+{
+  "id": "sample_transparent_bottle_pose01",
+  "scene": "scene1_singulated_tog",
+  "object_id": "transparent_bottle_01",
+  "target_part": "main_body_side_wall",
+  "task_instruction": "pick the transparent bottle by its main body side wall, avoid the cap",
+  "image_size": [640, 480],
+  "semantic_uv": [322.0, 244.0],
+  "semantic_confidence": 0.82,
+  "semantic_xyz_cam": [0.012, -0.004, 0.74],
+  "uncertainty_level": "mid",
+  "table_z_cam_m": 0.62,
+  "candidate_contact_uv": [
+    [319.0, 242.0],
+    [368.0, 250.0],
+    [326.0, 247.0],
+    [305.0, 230.0]
+  ],
+  "candidate_grasp_uv": [
+    [330.0, 247.0],
+    [378.0, 260.0],
+    [334.0, 254.0],
+    [310.0, 238.0]
+  ],
+  "candidate_grasps": [
+    [
+      [1.0, 0.0, 0.0, 0.010],
+      [0.0, 1.0, 0.0, -0.006],
+      [0.0, 0.0, 1.0, 0.500],
+      [0.0, 0.0, 0.0, 1.0]
+    ],
+    [
+      [0.996, -0.087, 0.0, 0.070],
+      [0.087, 0.996, 0.0, -0.010],
+      [0.0, 0.0, 1.0, 0.610],
+      [0.0, 0.0, 0.0, 1.0]
+    ],
+    [
+      [1.0, 0.0, 0.0, 0.014],
+      [0.0, 0.985, -0.174, -0.002],
+      [0.0, 0.174, 0.985, 0.625],
+      [0.0, 0.0, 0.0, 1.0]
+    ],
+    [
+      [0.985, 0.0, 0.174, -0.018],
+      [0.0, 1.0, 0.0, -0.018],
+      [-0.174, 0.0, 0.985, 0.635],
+      [0.0, 0.0, 0.0, 1.0]
+    ]
+  ]
+}

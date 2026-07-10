@@ -1,0 +1,40 @@
+frontend:
+  name: "GraspMolmo-style"
+  molmo_model_id: "allenai/Molmo-7B-D-0924"
+  model_dir: ""
+
+selection:
+  gripper_depth_m: 0.1406
+  semantic_projection_origin_weight: 0.7
+  semantic_projection_grasp_point_weight: 0.3
+  semantic_selection_guard_score_margin_px: 12.0
+  semantic_selection_guard_max_contact_center_dist_px: 30.0
+  semantic_selection_guard_max_semantic_xy_m: 0.030
+  semantic_execution_guard_semantic_topk: 6
+  table_z_cam_m: 0.62
+  table_grasp_clearance_m: 0.028
+  target_z_margin_m: 0.0
+  max_tilt_deg: 14.0
+
+execution:
+  fixed:
+    approach_offset_m: 0.08
+    motion_scale: 0.30
+    compliance_or_stiffness: "nominal"
+    exploration_amplitude_m: 0.0
+  bounded:
+    low:
+      approach_offset_m: 0.08
+      motion_scale: 0.80
+      compliance_or_stiffness: "nominal"
+      exploration_amplitude_m: 0.0
+    mid:
+      approach_offset_m: 0.09
+      motion_scale: 0.60
+      compliance_or_stiffness: "medium_soft"
+      exploration_amplitude_m: 0.002
+    high:
+      approach_offset_m: 0.10
+      motion_scale: 0.45
+      compliance_or_stiffness: "soft"
+      exploration_amplitude_m: 0.004

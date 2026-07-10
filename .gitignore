@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+runs/
+*.npy
+*.npz
+*.pth
+*.safetensors
+checkpoints/
+models/
+data/
+outputs/

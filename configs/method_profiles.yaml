@@ -1,0 +1,57 @@
+profiles:
+  M1:
+    label: "Raw/base task-oriented frontend + fixed execution"
+    frontend_name: "GraspMolmo-style + M2T2"
+    frontend_type: "graspmolmo_style"
+    front_end: "raw_anchor"
+    execution: "fixed_execution"
+    execution_policy: "original_fixed_execution"
+    paper_role: "baseline without conservative frontend guard or bounded execution"
+    real_runnable: true
+    description: "Baseline: use the raw semantic anchor selected from task-oriented candidates; execute with fixed motion parameters."
+    selection:
+      semantic_selection_guard_enabled: false
+      semantic_execution_guard_enabled: false
+    execution_theta:
+      approach_offset_m: 0.08
+      motion_scale: 0.30
+      compliance_or_stiffness: "nominal"
+      exploration_amplitude_m: 0.0
+
+  M2:
+    label: "Conservative anchor + fixed execution"
+    frontend_name: "GraspMolmo-style + M2T2"
+    frontend_type: "graspmolmo_style"
+    front_end: "conservative_anchor"
+    execution: "fixed_execution"
+    execution_policy: "original_fixed_execution"
+    paper_role: "ablation: conservative frontend guard without bounded execution"
+    real_runnable: true
+    description: "Ablation: apply semantic/execution guards during anchor selection, but keep execution fixed."
+    selection:
+      semantic_selection_guard_enabled: true
+      semantic_execution_guard_enabled: true
+    execution_theta:
+      approach_offset_m: 0.08
+      motion_scale: 0.30
+      compliance_or_stiffness: "nominal"
+      exploration_amplitude_m: 0.0
+
+  M3:
+    label: "Conservative anchor + bounded execution"
+    frontend_name: "GraspMolmo-style + M2T2"
+    frontend_type: "graspmolmo_style"
+    front_end: "conservative_anchor"
+    execution: "bounded_adaptive_execution"
+    execution_policy: "proposed_router_execution"
+    paper_role: "main proposed method"
+    real_runnable: true
+    description: "Proposed method: conservative anchor guards plus bounded execution parameters selected by a lightweight risk router."
+    selection:
+      semantic_selection_guard_enabled: true
+      semantic_execution_guard_enabled: true
+    execution_theta:
+      approach_offset_m: 0.09
+      motion_scale: 0.38
+      compliance_or_stiffness: "medium_soft"
+      exploration_amplitude_m: 0.002
