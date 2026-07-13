@@ -1,0 +1,271 @@
+trial_id,method,scene,object_id,object_name_zh,object_name_en,task_prompt,repeat_index,task_valid_v_i,physical_success_p_i,failure_type
+RCIM-M1-O01-S01,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,1,1,1,none
+RCIM-M1-O01-S02,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,2,1,1,none
+RCIM-M1-O01-S03,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,3,1,1,none
+RCIM-M1-O01-S04,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,4,1,1,none
+RCIM-M1-O01-S05,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,5,1,1,none
+RCIM-M1-O01-S06,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,6,0,0,task_invalid_selection
+RCIM-M1-O01-S07,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,7,0,0,task_invalid_selection
+RCIM-M1-O01-S08,M1,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,8,0,0,task_invalid_selection
+RCIM-M1-O01-C01,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M1-O01-C02,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M1-O01-C03,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,11,1,1,none
+RCIM-M1-O01-C04,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,12,1,1,none
+RCIM-M1-O01-C05,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,13,1,1,none
+RCIM-M1-O01-C06,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,14,1,1,none
+RCIM-M1-O01-C07,M1,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,15,1,1,none
+RCIM-M1-O02-S01,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",1,1,0,empty_grasp
+RCIM-M1-O02-S02,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",2,1,0,empty_grasp
+RCIM-M1-O02-S03,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",3,1,0,edge_grasp
+RCIM-M1-O02-S04,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",4,1,0,empty_grasp
+RCIM-M1-O02-S05,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",5,0,0,task_invalid_selection
+RCIM-M1-O02-S06,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",6,0,0,task_invalid_selection
+RCIM-M1-O02-S07,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",7,0,0,task_invalid_selection
+RCIM-M1-O02-S08,M1,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",8,0,0,task_invalid_selection
+RCIM-M1-O02-C01,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",9,1,1,none
+RCIM-M1-O02-C02,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",10,1,1,none
+RCIM-M1-O02-C03,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",11,1,1,none
+RCIM-M1-O02-C04,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",12,1,1,none
+RCIM-M1-O02-C05,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",13,1,1,none
+RCIM-M1-O02-C06,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",14,1,1,none
+RCIM-M1-O02-C07,M1,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",15,1,1,none
+RCIM-M1-O03-S01,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",1,1,1,none
+RCIM-M1-O03-S02,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",2,1,1,none
+RCIM-M1-O03-S03,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",3,1,1,none
+RCIM-M1-O03-S04,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",4,1,1,none
+RCIM-M1-O03-S05,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",5,1,1,none
+RCIM-M1-O03-S06,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",6,1,1,none
+RCIM-M1-O03-S07,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",7,1,0,control_safety_abort
+RCIM-M1-O03-S08,M1,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",8,1,0,edge_grasp
+RCIM-M1-O03-C01,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",9,1,1,none
+RCIM-M1-O03-C02,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",10,1,1,none
+RCIM-M1-O03-C03,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",11,1,1,none
+RCIM-M1-O03-C04,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",12,1,1,none
+RCIM-M1-O03-C05,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",13,1,1,none
+RCIM-M1-O03-C06,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",14,1,1,none
+RCIM-M1-O03-C07,M1,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M1-O04-S01,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,1,1,1,none
+RCIM-M1-O04-S02,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,2,1,1,none
+RCIM-M1-O04-S03,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,3,1,1,none
+RCIM-M1-O04-S04,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,4,1,1,none
+RCIM-M1-O04-S05,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,5,1,1,none
+RCIM-M1-O04-S06,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,6,1,1,none
+RCIM-M1-O04-S07,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,7,1,1,none
+RCIM-M1-O04-S08,M1,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,8,1,1,none
+RCIM-M1-O04-C01,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M1-O04-C02,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M1-O04-C03,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,11,0,0,task_invalid_selection
+RCIM-M1-O04-C04,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,12,0,0,task_invalid_selection
+RCIM-M1-O04-C05,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,13,0,0,task_invalid_selection
+RCIM-M1-O04-C06,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,14,0,0,task_invalid_selection
+RCIM-M1-O04-C07,M1,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,15,0,0,task_invalid_selection
+RCIM-M1-O05-S01,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",1,1,1,none
+RCIM-M1-O05-S02,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",2,1,1,none
+RCIM-M1-O05-S03,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",3,1,1,none
+RCIM-M1-O05-S04,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",4,1,1,none
+RCIM-M1-O05-S05,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",5,1,1,none
+RCIM-M1-O05-S06,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",6,1,1,none
+RCIM-M1-O05-S07,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",7,1,0,edge_grasp
+RCIM-M1-O05-S08,M1,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",8,1,0,push_or_table_interference
+RCIM-M1-O05-C01,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",9,1,0,empty_grasp
+RCIM-M1-O05-C02,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",10,1,0,empty_grasp
+RCIM-M1-O05-C03,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",11,1,0,push_or_table_interference
+RCIM-M1-O05-C04,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",12,0,0,task_invalid_selection
+RCIM-M1-O05-C05,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",13,0,0,task_invalid_selection
+RCIM-M1-O05-C06,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",14,0,0,task_invalid_selection
+RCIM-M1-O05-C07,M1,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M1-O06-S01,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,1,1,1,none
+RCIM-M1-O06-S02,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,2,1,1,none
+RCIM-M1-O06-S03,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,3,1,1,none
+RCIM-M1-O06-S04,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,4,1,1,none
+RCIM-M1-O06-S05,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,5,1,1,none
+RCIM-M1-O06-S06,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,6,1,1,none
+RCIM-M1-O06-S07,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,7,1,1,none
+RCIM-M1-O06-S08,M1,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,8,1,1,none
+RCIM-M1-O06-C01,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,9,1,1,none
+RCIM-M1-O06-C02,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,10,1,1,none
+RCIM-M1-O06-C03,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,11,1,1,none
+RCIM-M1-O06-C04,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,12,1,1,none
+RCIM-M1-O06-C05,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,13,1,0,slip_drop
+RCIM-M1-O06-C06,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,14,1,0,push_or_table_interference
+RCIM-M1-O06-C07,M1,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,15,1,0,edge_grasp
+RCIM-M2-O01-S01,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,1,1,1,none
+RCIM-M2-O01-S02,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,2,1,1,none
+RCIM-M2-O01-S03,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,3,1,1,none
+RCIM-M2-O01-S04,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,4,1,1,none
+RCIM-M2-O01-S05,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,5,1,1,none
+RCIM-M2-O01-S06,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,6,1,1,none
+RCIM-M2-O01-S07,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,7,1,0,slip_drop
+RCIM-M2-O01-S08,M2,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,8,1,0,push_or_table_interference
+RCIM-M2-O01-C01,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M2-O01-C02,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M2-O01-C03,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,11,1,1,none
+RCIM-M2-O01-C04,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,12,1,1,none
+RCIM-M2-O01-C05,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,13,1,1,none
+RCIM-M2-O01-C06,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,14,1,1,none
+RCIM-M2-O01-C07,M2,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,15,1,1,none
+RCIM-M2-O02-S01,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",1,1,1,none
+RCIM-M2-O02-S02,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",2,1,1,none
+RCIM-M2-O02-S03,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",3,1,0,slip_drop
+RCIM-M2-O02-S04,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",4,1,0,empty_grasp
+RCIM-M2-O02-S05,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",5,1,0,control_safety_abort
+RCIM-M2-O02-S06,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",6,0,0,task_invalid_selection
+RCIM-M2-O02-S07,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",7,0,0,task_invalid_selection
+RCIM-M2-O02-S08,M2,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",8,0,0,task_invalid_selection
+RCIM-M2-O02-C01,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",9,1,1,none
+RCIM-M2-O02-C02,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",10,1,1,none
+RCIM-M2-O02-C03,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",11,1,1,none
+RCIM-M2-O02-C04,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",12,1,1,none
+RCIM-M2-O02-C05,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",13,1,1,none
+RCIM-M2-O02-C06,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",14,1,1,none
+RCIM-M2-O02-C07,M2,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M2-O03-S01,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",1,1,1,none
+RCIM-M2-O03-S02,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",2,1,1,none
+RCIM-M2-O03-S03,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",3,1,1,none
+RCIM-M2-O03-S04,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",4,1,1,none
+RCIM-M2-O03-S05,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",5,1,1,none
+RCIM-M2-O03-S06,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",6,1,1,none
+RCIM-M2-O03-S07,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",7,1,0,edge_grasp
+RCIM-M2-O03-S08,M2,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",8,1,0,empty_grasp
+RCIM-M2-O03-C01,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",9,1,1,none
+RCIM-M2-O03-C02,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",10,1,1,none
+RCIM-M2-O03-C03,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",11,1,1,none
+RCIM-M2-O03-C04,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",12,1,1,none
+RCIM-M2-O03-C05,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",13,1,1,none
+RCIM-M2-O03-C06,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",14,1,1,none
+RCIM-M2-O03-C07,M2,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",15,1,1,none
+RCIM-M2-O04-S01,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,1,1,1,none
+RCIM-M2-O04-S02,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,2,1,1,none
+RCIM-M2-O04-S03,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,3,1,1,none
+RCIM-M2-O04-S04,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,4,1,1,none
+RCIM-M2-O04-S05,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,5,1,1,none
+RCIM-M2-O04-S06,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,6,1,1,none
+RCIM-M2-O04-S07,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,7,1,0,push_or_table_interference
+RCIM-M2-O04-S08,M2,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,8,1,0,empty_grasp
+RCIM-M2-O04-C01,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M2-O04-C02,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M2-O04-C03,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,11,1,1,none
+RCIM-M2-O04-C04,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,12,1,1,none
+RCIM-M2-O04-C05,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,13,1,1,none
+RCIM-M2-O04-C06,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,14,0,0,task_invalid_selection
+RCIM-M2-O04-C07,M2,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,15,0,0,task_invalid_selection
+RCIM-M2-O05-S01,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",1,1,1,none
+RCIM-M2-O05-S02,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",2,1,1,none
+RCIM-M2-O05-S03,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",3,1,1,none
+RCIM-M2-O05-S04,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",4,1,1,none
+RCIM-M2-O05-S05,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",5,1,1,none
+RCIM-M2-O05-S06,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",6,1,1,none
+RCIM-M2-O05-S07,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",7,1,0,slip_drop
+RCIM-M2-O05-S08,M2,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",8,1,0,empty_grasp
+RCIM-M2-O05-C01,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",9,1,1,none
+RCIM-M2-O05-C02,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",10,1,1,none
+RCIM-M2-O05-C03,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",11,1,0,push_or_table_interference
+RCIM-M2-O05-C04,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",12,1,0,edge_grasp
+RCIM-M2-O05-C05,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",13,1,0,edge_grasp
+RCIM-M2-O05-C06,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",14,1,0,edge_grasp
+RCIM-M2-O05-C07,M2,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M2-O06-S01,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,1,1,1,none
+RCIM-M2-O06-S02,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,2,1,1,none
+RCIM-M2-O06-S03,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,3,1,1,none
+RCIM-M2-O06-S04,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,4,1,1,none
+RCIM-M2-O06-S05,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,5,1,1,none
+RCIM-M2-O06-S06,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,6,1,1,none
+RCIM-M2-O06-S07,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,7,1,1,none
+RCIM-M2-O06-S08,M2,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,8,1,1,none
+RCIM-M2-O06-C01,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,9,1,1,none
+RCIM-M2-O06-C02,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,10,1,1,none
+RCIM-M2-O06-C03,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,11,1,1,none
+RCIM-M2-O06-C04,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,12,1,1,none
+RCIM-M2-O06-C05,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,13,1,0,push_or_table_interference
+RCIM-M2-O06-C06,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,14,1,0,control_safety_abort
+RCIM-M2-O06-C07,M2,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,15,1,0,edge_grasp
+RCIM-M3-O01-S01,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,1,1,1,none
+RCIM-M3-O01-S02,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,2,1,1,none
+RCIM-M3-O01-S03,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,3,1,1,none
+RCIM-M3-O01-S04,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,4,1,1,none
+RCIM-M3-O01-S05,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,5,1,1,none
+RCIM-M3-O01-S06,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,6,1,1,none
+RCIM-M3-O01-S07,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,7,1,1,none
+RCIM-M3-O01-S08,M3,simple,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall,8,1,0,slip_drop
+RCIM-M3-O01-C01,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M3-O01-C02,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M3-O01-C03,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,11,1,1,none
+RCIM-M3-O01-C04,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,12,1,1,none
+RCIM-M3-O01-C05,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,13,1,1,none
+RCIM-M3-O01-C06,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,14,1,1,none
+RCIM-M3-O01-C07,M3,light-clutter,O01,银色金属罐,silver metal canister,pick the silver metal canister by its side wall; ignore nearby objects,15,1,1,none
+RCIM-M3-O02-S01,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",1,1,1,none
+RCIM-M3-O02-S02,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",2,1,1,none
+RCIM-M3-O02-S03,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",3,1,1,none
+RCIM-M3-O02-S04,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",4,1,1,none
+RCIM-M3-O02-S05,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",5,1,0,edge_grasp
+RCIM-M3-O02-S06,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",6,0,0,task_invalid_selection
+RCIM-M3-O02-S07,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",7,0,0,task_invalid_selection
+RCIM-M3-O02-S08,M3,simple,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap",8,0,0,task_invalid_selection
+RCIM-M3-O02-C01,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",9,1,1,none
+RCIM-M3-O02-C02,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",10,1,1,none
+RCIM-M3-O02-C03,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",11,1,1,none
+RCIM-M3-O02-C04,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",12,1,1,none
+RCIM-M3-O02-C05,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",13,1,1,none
+RCIM-M3-O02-C06,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",14,1,1,none
+RCIM-M3-O02-C07,M3,light-clutter,O02,白盖透明实验室样品瓶,white-cap transparent lab sample bottle,"pick the white-cap transparent lab sample bottle by its main body side wall, avoid the white cap; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M3-O03-S01,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",1,1,1,none
+RCIM-M3-O03-S02,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",2,1,1,none
+RCIM-M3-O03-S03,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",3,1,1,none
+RCIM-M3-O03-S04,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",4,1,1,none
+RCIM-M3-O03-S05,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",5,1,1,none
+RCIM-M3-O03-S06,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",6,1,1,none
+RCIM-M3-O03-S07,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",7,1,1,none
+RCIM-M3-O03-S08,M3,simple,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap",8,1,0,slip_drop
+RCIM-M3-O03-C01,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",9,1,1,none
+RCIM-M3-O03-C02,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",10,1,1,none
+RCIM-M3-O03-C03,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",11,1,1,none
+RCIM-M3-O03-C04,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",12,1,1,none
+RCIM-M3-O03-C05,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",13,1,1,none
+RCIM-M3-O03-C06,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",14,1,1,none
+RCIM-M3-O03-C07,M3,light-clutter,O03,黑盖透明长管,black-cap transparent cylindrical tube,"pick the long transparent tube by its middle body, avoid the black cap; ignore nearby objects",15,1,1,none
+RCIM-M3-O04-S01,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,1,1,1,none
+RCIM-M3-O04-S02,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,2,1,1,none
+RCIM-M3-O04-S03,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,3,1,1,none
+RCIM-M3-O04-S04,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,4,1,1,none
+RCIM-M3-O04-S05,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,5,1,1,none
+RCIM-M3-O04-S06,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,6,1,1,none
+RCIM-M3-O04-S07,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,7,1,1,none
+RCIM-M3-O04-S08,M3,simple,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall,8,1,0,slip_drop
+RCIM-M3-O04-C01,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,9,1,1,none
+RCIM-M3-O04-C02,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,10,1,1,none
+RCIM-M3-O04-C03,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,11,1,1,none
+RCIM-M3-O04-C04,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,12,1,1,none
+RCIM-M3-O04-C05,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,13,1,1,none
+RCIM-M3-O04-C06,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,14,0,0,task_invalid_selection
+RCIM-M3-O04-C07,M3,light-clutter,O04,蓝色纸杯,blue paper cup,pick the blue paper cup by its side wall; ignore nearby objects,15,0,0,task_invalid_selection
+RCIM-M3-O05-S01,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",1,1,1,none
+RCIM-M3-O05-S02,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",2,1,1,none
+RCIM-M3-O05-S03,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",3,1,1,none
+RCIM-M3-O05-S04,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",4,1,1,none
+RCIM-M3-O05-S05,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",5,1,1,none
+RCIM-M3-O05-S06,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",6,1,1,none
+RCIM-M3-O05-S07,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",7,1,1,none
+RCIM-M3-O05-S08,M3,simple,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck",8,1,0,control_safety_abort
+RCIM-M3-O05-C01,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",9,1,1,none
+RCIM-M3-O05-C02,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",10,1,1,none
+RCIM-M3-O05-C03,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",11,1,1,none
+RCIM-M3-O05-C04,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",12,1,1,none
+RCIM-M3-O05-C05,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",13,1,1,none
+RCIM-M3-O05-C06,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",14,1,1,none
+RCIM-M3-O05-C07,M3,light-clutter,O05,透明锥形瓶,transparent conical flask,"pick the transparent conical flask by its main body side wall, avoid the neck; ignore nearby objects",15,0,0,task_invalid_selection
+RCIM-M3-O06-S01,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,1,1,1,none
+RCIM-M3-O06-S02,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,2,1,1,none
+RCIM-M3-O06-S03,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,3,1,1,none
+RCIM-M3-O06-S04,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,4,1,1,none
+RCIM-M3-O06-S05,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,5,1,1,none
+RCIM-M3-O06-S06,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,6,1,1,none
+RCIM-M3-O06-S07,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,7,1,1,none
+RCIM-M3-O06-S08,M3,simple,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim,8,1,0,edge_grasp
+RCIM-M3-O06-C01,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,9,1,1,none
+RCIM-M3-O06-C02,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,10,1,1,none
+RCIM-M3-O06-C03,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,11,1,1,none
+RCIM-M3-O06-C04,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,12,1,1,none
+RCIM-M3-O06-C05,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,13,1,1,none
+RCIM-M3-O06-C06,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,14,1,0,empty_grasp
+RCIM-M3-O06-C07,M3,light-clutter,O06,大号透明胶带卷,large clear packing tape roll,pick the large clear packing tape roll by its outer rim; ignore nearby objects,15,1,0,push_or_table_interference
