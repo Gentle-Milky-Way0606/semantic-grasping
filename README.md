@@ -54,3 +54,24 @@ This package is intentionally dry-run first. To connect the real stack:
 2. Replace the example candidate list with real M2T2 6-DoF grasp candidates.
 3. Send `ExecutionPlan.theta_exec` to your robot controller instead of using the dry-run artifact.
 4. Keep `M1/M2/M3` profiles frozen when reporting baseline/proposed results.
+
+
+## 2026 TII revised-manuscript alignment
+
+The 2026-09-28 revised TII formulas and parameters are implemented in
+`src/semantic_grasping/paper_rules.py` and connected to the dry-run
+`execution.py` plan. See [formula audit and limitations](docs/TII_FORMULA_AUDIT.md).
+
+**Important:** `M1` and `M2` use the fixed **low-tier** profile
+(velocity scale 0.80). `M3` alone routes using the maximum of all seven
+condition cues and thresholds 0.50 and 0.70. Previous ID-token
+risk heuristics and the historical 0.30 fixed velocity are not paper-aligned.
+
+This is not a hardware implementation: the example JSON contains no
+verified world-frame Table-I/III execution geometry, so dry-run
+planning now reports a blocked decision instead of inventing a safe route.
+No motion is sent. For an admissible offline decision, supply measured
+`execution_conditions` and independently checked `execution_safety`.
+
+Regression tests: `python -m unittest discover -s tests -v`.
+

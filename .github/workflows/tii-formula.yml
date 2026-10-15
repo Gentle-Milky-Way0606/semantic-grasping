@@ -1,0 +1,22 @@
+name: TII paper formula regression
+on:
+  pull_request:
+  push:
+    branches:
+      - fix/tii-paper-aligned-execution-20261015
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Paper formula tests
+        run: python -m unittest discover -s tests -v
+      - name: Legacy sample fails closed without measurements
+        run: |
+          python scripts/run_demo.py --method M3 --output-dir runs/test_m3
+          python -c "import json; p=json.load(open('runs/test_m3/execution_plan.json')); assert p['safety_checks']['allow_execute'] is False; assert p['safety_checks']['preexecution_abort'] is True"

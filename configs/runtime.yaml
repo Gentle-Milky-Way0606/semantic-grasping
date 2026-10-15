@@ -19,7 +19,7 @@ selection:
 execution:
   fixed:
     approach_offset_m: 0.08
-    motion_scale: 0.30
+    motion_scale: 0.80
     compliance_or_stiffness: "nominal"
     exploration_amplitude_m: 0.0
   bounded:
