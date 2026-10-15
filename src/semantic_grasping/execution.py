@@ -1,43 +1,35 @@
+"""Paper-aligned dry-run execution planner.
+
+Real-robot execution is intentionally unavailable: these files define the
+decision and audit interface, not a calibrated FR3 controller.
+"""
 from __future__ import annotations
 
 from typing import Any
 
+from semantic_grasping.paper_rules import decide
 from semantic_grasping.schemas import ExecutionPlan, SelectedGrasp
 
 
-def estimate_risk(
-    *,
-    observation: dict[str, Any],
-    guard_debug: dict[str, Any],
-) -> dict[str, Any]:
-    object_id = str(observation.get("object_id", "")).lower()
-    declared_uncertainty = str(observation.get("uncertainty_level", "")).lower()
-    score = 0.0
-    reasons: list[str] = []
-
-    if any(token in object_id for token in ["transparent", "glass", "reflective", "metal"]):
-        score += 0.35
-        reasons.append("difficult_material")
-    if declared_uncertainty == "high":
-        score += 0.40
-        reasons.append("declared_high_uncertainty")
-    elif declared_uncertainty == "mid":
-        score += 0.20
-        reasons.append("declared_mid_uncertainty")
-    if guard_debug.get("far_reasons"):
-        score += 0.30
-        reasons.extend(guard_debug["far_reasons"])
-    if float(guard_debug.get("selected_tilt_deg", 0.0)) > 10.0:
-        score += 0.15
-        reasons.append("tilted_candidate")
-
-    if score >= 0.65:
-        level = "high"
-    elif score >= 0.30:
-        level = "mid"
-    else:
-        level = "low"
-    return {"risk_score": round(score, 4), "risk_level": level, "reasons": reasons}
+def estimate_risk(*, observation: dict[str, Any],
+                  guard_debug: dict[str, Any],
+                  method: str = "M3") -> dict[str, Any]:
+    """Evaluate seven Table-I cues; never sum object-name heuristic weights."""
+    decision = decide(
+        method,
+        observation.get("execution_conditions") or {},
+        observation.get("execution_safety") or {},
+        list(guard_debug.get("far_reasons") or []),
+    )
+    return {
+        "risk_score": decision["risk_score"],
+        "risk_level": decision["risk_level"],
+        "cues": decision["cues"],
+        "applied_profile_tier": decision["applied_profile_tier"],
+        "abort": decision["abort"],
+        "abort_reasons": decision["abort_reasons"],
+        "status": "blocked" if decision["abort"] else "verified_input_dry_run",
+    }
 
 
 def build_execution_plan(
@@ -48,56 +40,61 @@ def build_execution_plan(
     observation: dict[str, Any],
     guard_debug: dict[str, Any],
 ) -> ExecutionPlan:
-    execution = str(method_profile.get("execution", "fixed_execution"))
-    policy = str(method_profile.get("execution_policy", "original_fixed_execution"))
-    risk = estimate_risk(observation=observation, guard_debug=guard_debug)
+    method = str(method_profile.get("name", ""))
+    if method not in {"M1", "M2", "M3"}:
+        raise ValueError("method_profile.name must be M1/M2/M3")
 
-    if execution == "bounded_adaptive_execution":
-        bounded_cfg = runtime_cfg.get("execution", {}).get("bounded", {})
-        theta = dict(bounded_cfg.get(risk["risk_level"], {}))
-        theta.update(
-            {
-                "approach_direction_adjustment": "tabletop_and_semantic_guarded",
-                "local_refine_delta": {
-                    "enabled": True,
-                    "source": "semantic point + table clearance guard",
-                    "delta_m": [0.0, 0.0, 0.0],
-                },
-                "stop_retry_gate": {
-                    "stop_on_force": True,
-                    "stop_on_width_anomaly": True,
-                    "max_retries": 1,
-                    "abort_reasons": guard_debug.get("far_reasons", []),
-                },
-                "risk": risk,
-            }
-        )
-    else:
-        theta = dict(method_profile.get("execution_theta") or runtime_cfg.get("execution", {}).get("fixed", {}))
-        theta.update(
-            {
-                "approach_direction_adjustment": "fixed",
-                "local_refine_delta": {"enabled": False},
-                "stop_retry_gate": {"max_retries": 0},
-                "risk": risk,
-            }
-        )
+    decision = decide(
+        method,
+        observation.get("execution_conditions") or {},
+        observation.get("execution_safety") or {},
+        list(guard_debug.get("far_reasons") or []),
+    )
+    risk = {
+        "risk_score": decision["risk_score"],
+        "risk_level": decision["risk_level"],
+        "cues": decision["cues"],
+        "applied_profile_tier": decision["applied_profile_tier"],
+        "abort": decision["abort"],
+        "abort_reasons": decision["abort_reasons"],
+    }
 
-    expected_motion = {
-        "motion_sent": False,
-        "dry_run_plan_only": True,
-        "note": "This package emits robot-agnostic execution parameters. Hardware adapters consume theta_exec.",
-    }
-    safety_checks = {
-        "semantic_guard": guard_debug,
-        "allow_execute": not guard_debug.get("far_reasons"),
-        "policy_scope": "post-selection execution adapter after GraspMolmo-style selected grasp",
-    }
+    # Do not expose executable motion parameters when safety evidence is absent
+    # or the independent pre-execution gate has fired.
+    theta = dict(decision["profile"] or {})
+    theta["risk"] = risk
+    theta["controller_command_enabled"] = False
+    theta["motion_sent"] = False
+    theta["profile_source"] = "2026-09-28 TII Table II"
+    theta["waypoint_plan"] = (
+        ["pre_approach", "approach", "close", "lift", "retreat"]
+        if not decision["abort"] else []
+    )
+    # M1/M2 still compute risk for audit, but must execute the fixed LOW tier.
+    # M3 uses the selected risk tier. No extra recovery/probe is simulated here.
+
     return ExecutionPlan(
-        execution_policy=policy,
+        execution_policy=str(method_profile.get("execution_policy", "")),
         theta_exec=theta,
         selected_grasp_path="selected_grasp.json",
-        safety_checks=safety_checks,
-        expected_motion=expected_motion,
+        safety_checks={
+            "semantic_guard": guard_debug,
+            "preexecution_abort": decision["abort"],
+            "abort_reasons": decision["abort_reasons"],
+            # This repository is only a dry-run reference implementation.
+            "allow_execute": False,
+            "eligible_for_external_adapter": not decision["abort"],
+            "hardware_controller_verified": False,
+            "source": "TII Eq. (5), Table III",
+        },
+        expected_motion={
+            "motion_sent": False,
+            "dry_run_plan_only": True,
+            "note": (
+                "No calibrated Cartesian controller, collision checker, "
+                "runtime force stop, or physical motion is implemented. "
+                "Do not interpret this dry-run plan as a safety certification."
+            ),
+        },
         dry_run_plan_only=True,
     )
