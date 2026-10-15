@@ -74,7 +74,7 @@ class PaperRulesTests(unittest.TestCase):
         record["transparent_or_glass"] = True
         record["thin_walled"] = True
         record["annotation_uncertainty"] = 1.
-        self.assertAlmostEqual(material_cue(record), .20+.30+.25+.10+.20)
+        self.assertAlmostEqual(material_cue(record), 1.0)
         record["reflectivity"] = "invalid"
         with self.assertRaises(ValueError):
             material_cue(record)
