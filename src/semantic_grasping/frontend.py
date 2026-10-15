@@ -48,18 +48,9 @@ class MolmoFrontendAdapter:
                 },
             )
 
-        image_size = observation.get("image_size", [640, 480])
-        width, height = float(image_size[0]), float(image_size[1])
-        return SemanticPoint(
-            uv=[width / 2.0, height / 2.0],
-            confidence=None,
-            source="image_center_fallback",
-            raw={
-                "frontend_name": self.frontend_name,
-                "frontend_type": self.frontend_type,
-                "model_url": MOLMO_MODEL_URL,
-                "code_url": MOLMO_CODE_URL,
-                "task_instruction": task_instruction,
-                "note": "Fallback only. Provide observation.semantic_uv or plug in Molmo for real runs.",
-            },
+        # A pixel at image center is NOT a task-conditioned semantic prediction.
+        # Fail explicitly instead of misrepresenting it as a GraspMolmo anchor.
+        raise ValueError(
+            "Missing observation.semantic_uv: supply an actual semantic point "
+            "from the model or an explicitly labeled recorded dry-run packet."
         )
