@@ -35,7 +35,10 @@ def _candidate_uv(observation: dict[str, Any], key: str, fallback_xyz: np.ndarra
         if uv.shape[0] != fallback_xyz.shape[0] or uv.shape[1] != 2:
             raise ValueError(f"{key} must have shape [N, 2].")
         return uv
-    return fallback_xyz[:, :2]
+    raise ValueError(
+        f"Missing {key}: 3D camera coordinates are not 2D pixel coordinates. "
+        "Supply calibrated projected candidate UV coordinates."
+    )
 
 
 def _tilt_deg(T: np.ndarray) -> float:
