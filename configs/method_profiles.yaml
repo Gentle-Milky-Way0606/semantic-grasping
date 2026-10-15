@@ -7,14 +7,14 @@ profiles:
     execution: "fixed_execution"
     execution_policy: "original_fixed_execution"
     paper_role: "baseline without conservative frontend guard or bounded execution"
-    real_runnable: true
+    real_runnable: false
     description: "Baseline: use the raw semantic anchor selected from task-oriented candidates; execute with fixed motion parameters."
     selection:
       semantic_selection_guard_enabled: false
       semantic_execution_guard_enabled: false
     execution_theta:
       approach_offset_m: 0.08
-      motion_scale: 0.30
+      motion_scale: 0.80
       compliance_or_stiffness: "nominal"
       exploration_amplitude_m: 0.0
 
@@ -26,14 +26,14 @@ profiles:
     execution: "fixed_execution"
     execution_policy: "original_fixed_execution"
     paper_role: "ablation: conservative frontend guard without bounded execution"
-    real_runnable: true
+    real_runnable: false
     description: "Ablation: apply semantic/execution guards during anchor selection, but keep execution fixed."
     selection:
       semantic_selection_guard_enabled: true
       semantic_execution_guard_enabled: true
     execution_theta:
       approach_offset_m: 0.08
-      motion_scale: 0.30
+      motion_scale: 0.80
       compliance_or_stiffness: "nominal"
       exploration_amplitude_m: 0.0
 
@@ -45,13 +45,9 @@ profiles:
     execution: "bounded_adaptive_execution"
     execution_policy: "proposed_router_execution"
     paper_role: "main proposed method"
-    real_runnable: true
+    real_runnable: false
     description: "Proposed method: conservative anchor guards plus bounded execution parameters selected by a lightweight risk router."
     selection:
       semantic_selection_guard_enabled: true
       semantic_execution_guard_enabled: true
-    execution_theta:
-      approach_offset_m: 0.09
-      motion_scale: 0.38
-      compliance_or_stiffness: "medium_soft"
-      exploration_amplitude_m: 0.002
+    # M3 parameters come from Table-II tier lookup; never fixed here.
