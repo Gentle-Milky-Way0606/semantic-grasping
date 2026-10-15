@@ -61,7 +61,7 @@ def build_execution_plan(
 
     # Do not expose executable motion parameters when safety evidence is absent
     # or the independent pre-execution gate has fired.
-    theta = dict(decision["profile"] or {})
+    theta = dict(decision["profile"] or {}) if not decision["abort"] else {}
     theta["risk"] = risk
     theta["controller_command_enabled"] = False
     theta["motion_sent"] = False
